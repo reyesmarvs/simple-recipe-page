@@ -1,6 +1,5 @@
 * {
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
@@ -9,7 +8,8 @@ body {
   font-size: 16px;
   font-family: Outfit;
   color: hsl(30, 10%, 34%);
-  word-wrap: break-word;
+  display: grid;
+  place-items: center;
 }
 
 @font-face {
@@ -34,7 +34,7 @@ body {
 .recipe {
   width: 100%;
   max-width: 720px;
-  margin: 3em auto;
+  margin: 3em 0;
   background-color: hsl(0, 0%, 100%);
   border-radius: 20px;
   padding: 2em;
@@ -70,9 +70,8 @@ body {
   width: 100%;
 }
 
-ul,
-ol {
-  margin-left: 1.2em;
+ul, ol {
+  padding-left: 1.5em;
 }
 
 ul li,
@@ -142,7 +141,6 @@ table tr td:nth-child(2) {
 
 @media screen and (max-width: 375px) {
   .recipe {
-    margin: 0 auto;
     padding: 0;
     border-radius: 0;
   }
